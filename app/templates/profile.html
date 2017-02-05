@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% include "header.html" %}
+
+
+{% block main %}
+
+<div>
+<h1 class="page-header">Profile</h1>
+<table>
+    <tr>
+        <td style="padding: 50px">
+            <img src="{{ url_for('static', filename='pic.jpg') }}" height="200" width="200" />
+        </td>
+        <td style="border-left: solid; border-width: 1px; padding: 20px;">
+            <h3>Jaime Howell</h3><hr>
+            <p>Todays date is {{ date }} </p><hr>
+            <p><b>Username:</b> jamez21</p>
+            <p><b>ID#:</b> 620076150</p>
+            <p><b>Age:</b> 22</p>
+            <p><b>Gender:</b> Male</p><hr>
+            <p>"Butter Toast... Gravy!!!"</p>
+        </td>
+    </tr>
+</table>
+</div>
+
+{% endblock %}
